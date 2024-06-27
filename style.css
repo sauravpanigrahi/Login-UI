@@ -1,0 +1,84 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(120deg,#2980b9,black);
+}
+#content {
+    width: 30%;
+   height: auto;
+max-width: 400px;
+    border: 2px solid black;
+    text-align: center;
+    background: white;
+    border-radius: 13px;
+    box-shadow: 0px 0px 20px black;
+    padding: 20px;
+}
+
+#content h1{
+    margin: 5px 6px;
+    padding: 10px 0;
+    background: whitesmoke;
+    border-bottom: 1px solid grey;
+       font-family: sans-serif;
+}
+.username input, .pass input{
+    height:40px;
+    width:80%;
+    margin-top: 10px;
+    border-radius: 15px;
+   outline: none;
+    padding: 0 15px;
+
+}
+
+.remm-pass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:10px;
+    text-align: center;
+}
+.remm-pass input{
+    margin-left:0;
+}
+.remm-pass a{
+margin-left:auto;
+
+}
+input[type="submit"]{
+    height: 45px;
+    width:100%;
+    margin-top: 20px;
+    border-radius: 10px;
+     font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: #2691d9;
+    color: white;
+}
+input[type="submit"]:hover{
+    background-color: #1e77c3;
+    border: 2px solid #1e77c3;
+}
+@media (max-width: 768px) {
+    #content {
+        width: 80%; /* Adjusted width for smaller screens */
+        padding: 15px; /* Adjusted padding */
+    }
+    .username input, .pass input, input[type="submit"] {
+        height: 35px; /* Reduced height */
+        font-size: 16px; /* Reduced font size */
+    }
+}
